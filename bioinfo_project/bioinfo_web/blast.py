@@ -85,8 +85,4 @@ def analise(res):
     print("Analise")
     tempo()
     print("Analise")
-    with open('bioinfo_web/result_blast.txt', 'w') as arquivo:
-        for alinhamento in alinhamentos:
-            alinhamento = json.dumps(alinhamento)
-            arquivo.write(f'{alinhamento}"\n"')
     return alinhamentos
